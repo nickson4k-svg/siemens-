@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>сервісний центр техніки Siemens</title>
+  <meta name="description"
+    content="Незалежний спеціалізований сервісний центр побутової техніки Siemens у Києві та Київській області. Професійна діагностика, якісні комплектуючі, гарантія на виконані роботи та замінені деталі за актом.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+  <!-- Clean Transparent Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand-logo" aria-label="Siemens">
+        <img src="img/logo.webp" alt="SIEMENS" class="brand-logo-img">
+      </a>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="index.html" class="nav-link active">Головна</a>
+
+        <a href="services.html" class="nav-link">Сервіс</a>
+        <a href="prices.html" class="nav-link">Прайс-лист</a>
+        <a href="about.html" class="nav-link">Про майстерню</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+      </nav>
+      <button type="button" class="mobile-menu-toggle" aria-label="Відкрити меню" data-drawer-open>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="img/logo.webp" alt="Siemens" class="brand-logo-img" style="height: 22px;">
+        </a>
+        <button type="button" class="mobile-drawer-close" style="background:none; color:#fff; cursor:pointer;"
+          aria-label="Закрити меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div
+        style="font-size: 0.75rem; color: var(--text-light-muted); padding: 0 0 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 16px;">
+        Незалежний спеціалізований сервісний центр. Ми не є авторизованим сервісним центром Siemens AG.
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link active">Головна</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Послуги ремонту</a></li>
+        <li><a href="prices.html" class="mobile-nav-link">Прайс-лист</a></li>
+        <li><a href="about.html" class="mobile-nav-link">Про майстерню</a></li>
+        <li><a href="contacts.html" class="mobile-nav-link">Контакти</a></li>
+      </ul>
+    </div>
+    <div style="padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <p style="font-size: 0.8125rem; color: var(--text-light-muted); margin-bottom: 8px;">Зв'язок зі спеціалістом:</p>
+      <a href="tel:+380000000000" data-config="phone-mobile"
+        style="color: #fff; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 16px;">+38 (0XX)
+        XXX-XX-XX</a>
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-modal-trigger>
+        <span>Викликати спеціаліста</span>
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Спеціалізований ремонт техніки Siemens у Києві
+            </h1>
+            <p class="hero-subtitle">
+              Професійне відновлення побутової техніки. Використовуємо якісні оригінальні комплектуючі або надійні
+              перевірені європейські аналоги (OEM). Гарантія на виконані роботи та замінені деталі фіксується майстром в
+              акті.
+            </p>
+            <div class="hero-actions">
+              <button type="button" class="btn btn-primary" data-modal-trigger data-service="Виклик спеціаліста">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Замовити виїзд спеціаліста</span>
+              </button>
+              <a href="services.html" class="btn btn-outline">
+                <span>Каталог послуг</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Express Request Card -->
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <h2 class="hero-card-title">Швидкий виклик спеціаліста</h2>
+              <p class="hero-card-desc">Залиште номер — зв'яжемося найближчим часом для уточнення деталей несправності
+              </p>
+            </div>
+            <form data-ajax-form method="POST" action="send.php">
+              <!-- Honeypot -->
+              <input type="text" name="website_url" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="form_source" value="Головний екран (Hero)">
+
+              <div class="form-group">
+                <label class="form-label">Тип техніки Siemens</label>
+                <select name="appliance" class="form-control" required>
+                  <option value="Пральна машина">Пральна машина</option>
+                  <option value="Посудомийна машина">Посудомийна машина</option>
+                  <option value="Холодильник">Холодильник NoFrost</option>
+                  <option value="Духова шафа">Духова шафа</option>
+                  <option value="Варильна поверхня">Варильна поверхня</option>
+                  <option value="Витяжка">Витяжка</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Номер телефону *</label>
+                <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">
+                <span>Викликати спеціаліста</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <p class="form-help" style="text-align: center;">Консультація чергового спеціаліста</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Bottom Transparent Metrics Row -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-val" data-config="metrics-experience">Досвід</span>
+            <span class="metric-label">Спеціалізація на Siemens</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val" data-config="metrics-arrival">Оперативно</span>
+            <span class="metric-label">Виїзд за погодженням</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val" data-config="metrics-warranty">1–6 міс.</span>
+            <span class="metric-label">Гарантія за актом</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Grid Section (Clean White Cards) -->
+    <section id="services" class="section-py" style="background-color: var(--bg-light);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Категорії побутової техніки</h2>
+          <p class="section-desc">
+            Обслуговуємо модельний ряд техніки Siemens — від класичних серій iQ300 та iQ500 до преміальних лінійок
+            iQ700, studioLine та приладів з інверторним керуванням.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Card 1: Washing -->
+          <div class="category-card" data-modal-trigger data-service="Пральні машини">
+            <div class="category-image-box">
+              <img src="img/pralka.webp" alt="Пральні машини Siemens" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Пральні машини</h3>
+            <p class="category-desc">
+              Діагностика та усунення помилок E18, E23, заміна помпи, ТЕНу, відновлення плат інвертора.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 450 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2: Dishwashers -->
+          <div class="category-card" data-modal-trigger data-service="Посудомийні машини">
+            <div class="category-image-box">
+              <img src="img/posuda.webp" alt="Посудомийні машини Siemens" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Посудомийні машини</h3>
+            <p class="category-desc">
+              Усунення протікань AquaStop (код E15), заміна теплового насоса з ТЕНом (код E09), обслуговування
+              циркулятора.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 450 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Fridges -->
+          <div class="category-card" data-modal-trigger data-service="Холодильники">
+            <div class="category-image-box">
+              <img src="img/holodos.webp" alt="Холодильники Siemens NoFrost" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Холодильники NoFrost</h3>
+            <p class="category-desc">
+              Заправка фреоном R600a, заміна компресора, сенсорів multiAirflow та вузлів системи noFrost.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 550 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 4: Ovens -->
+          <div class="category-card" data-modal-trigger data-service="Духові шафи">
+            <div class="category-image-box">
+              <img src="img/Duhova-shafa.webp" alt="Духові шафи Siemens" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Духові шафи</h3>
+            <p class="category-desc">
+              Заміна нагрівальних елементів 4D-HotAir, перевірка термодатчиків, ремонт блоків керування.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 450 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 5: Cooktops -->
+          <div class="category-card" data-modal-trigger data-service="Варильні поверхні">
+            <div class="category-image-box">
+              <img src="img/poverhna.webp" alt="Варильні поверхні Siemens" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Варильні поверхні</h3>
+            <p class="category-desc">
+              Відновлення плат індукції flexInduction, сенсорних панелей touchSlider, заміна реле нагріву.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 450 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 6: Range Hoods -->
+          <div class="category-card" data-modal-trigger data-service="Витяжки">
+            <div class="category-image-box">
+              <img src="img/witajka.webp" alt="Витяжки Siemens" class="category-img" loading="lazy">
+            </div>
+            <h3 class="category-title">Витяжки Siemens</h3>
+            <p class="category-desc">
+              Обслуговування моторів iQdrive, заміна блоків керування cookConnect, заміна світлодіодних модулів.
+            </p>
+            <div class="category-footer">
+              <span class="category-price">від 400 грн</span>
+              <span class="category-arrow">
+                <span>Викликати</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="services.html" class="btn btn-secondary">
+            <span>Переглянути повний перелік послуг</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standards & Engineering Approach Section (Dark Graphite) -->
+    <section class="section-py standards-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title title-white">Принципи роботи сервісу</h2>
+          <p class="section-desc desc-muted">
+            Практичний досвід та сучасне діагностичне оснащення для надійного відновлення техніки.
+          </p>
+        </div>
+
+        <div class="standards-grid">
+          <div class="standard-card">
+            <div class="standard-number">01</div>
+            <h3 class="standard-title">Професійна діагностика</h3>
+            <p class="standard-text">
+              Професійне діагностичне обладнання для зчитування сервісних кодів помилок та виявлення несправностей у
+              роботі мікропроцесорних модулів.
+            </p>
+          </div>
+
+          <div class="standard-card">
+            <div class="standard-number">02</div>
+            <h3 class="standard-title">Якісні комплектуючі</h3>
+            <p class="standard-text">
+              Використовуємо якісні оригінальні комплектуючі або надійні перевірені європейські аналоги (OEM) за
+              погодженням із клієнтом.
+            </p>
+          </div>
+
+          <div class="standard-card">
+            <div class="standard-number">03</div>
+            <h3 class="standard-title">Акт виконаних робіт</h3>
+            <p class="standard-text">
+              Після завершення ремонту надається Акт виконаних робіт із фіксацією переліку послуг та гарантії на
+              замінені деталі (від 1 до 6 місяців).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step-by-Step Callout Workflow -->
+    <section class="section-py" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Етапи обслуговування</h2>
+          <p class="section-desc">
+            Прозорий та зрозумілий процес взаємодії від дзвінка до перевірки результату.
+          </p>
+        </div>
+
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-badge">1</div>
+            <h3 class="step-title">Заявка або дзвінок</h3>
+            <p class="step-desc">
+              Ви повідомляєте модель техніки Siemens та характер несправності. Спеціаліст орієнтує щодо попереднього
+              обсягу робіт.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">2</div>
+            <h3 class="step-title">Узгодження візиту</h3>
+            <p class="step-desc">
+              Майстер погоджує зручний час прибуття та бере необхідне діагностичне обладнання і деталі.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">3</div>
+            <h3 class="step-title">Діагностика та ремонт</h3>
+            <p class="step-desc">
+              Більшість несправностей майстер намагається усунути під час першого візиту за наявності необхідних
+              деталей.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-badge">4</div>
+            <h3 class="step-title">Перевірка та акт</h3>
+            <p class="step-desc">
+              Контрольний запуск приладу, оформлення Акту виконаних робіт із фіксацією гарантії та підписом спеціаліста.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Real Geographic Map & Quick Request Section -->
+    <section class="section-py map-section-real" id="mapSection">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Зона обслуговування: Київ та Київська область</h2>
+          <p class="section-desc">
+            Виїзд спеціалістів до всіх 10 районів Києва та прилеглих населених пунктів області за попереднім
+            погодженням.
+          </p>
+        </div>
+
+        <div class="real-map-grid">
+          <!-- Real Interactive Geographic Google Map (Height 450px) -->
+          <div class="real-map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=%D0%BC%D1%96%D1%81%D1%82%D0%BE+%D0%9A%D0%B8%D1%97%D0%B2&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              class="real-map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Зона обслуговування: м. Київ та область">
+            </iframe>
+          </div>
+
+          <!-- Quick Request Card -->
+          <div class="real-map-form-box">
+            <h3 class="floating-card-title">Виклик майстра до вашого району</h3>
+            <p class="floating-card-desc">
+              Обслуговуємо райони Києва та прилеглі населені пункти Київської області (до 30 км).
+            </p>
+            <form data-ajax-form method="POST" action="send.php">
+              <input type="text" name="website_url" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="form_source" value="Карта районів (index.html)">
+
+              <div class="form-group">
+                <label class="form-label">Ваш номер телефону *</label>
+                <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Район або місто області</label>
+                <select name="district" class="form-control">
+                  <option value="" disabled selected>Оберіть ваш район або місто</option>
+                  <optgroup label="Київ (усі райони)">
+                    <option value="Печерський район">Печерський район</option>
+                    <option value="Шевченківський район">Шевченківський район</option>
+                    <option value="Голосіївський район">Голосіївський район</option>
+                    <option value="Оболонський район">Оболонський район</option>
+                    <option value="Подільський район">Подільський район</option>
+                    <option value="Солом'янський район">Солом'янський район</option>
+                    <option value="Святошинський район">Святошинський район</option>
+                    <option value="Дарницький район">Дарницький район</option>
+                    <option value="Дніпровський район">Дніпровський район</option>
+                    <option value="Деснянський район">Деснянський район</option>
+                  </optgroup>
+                  <optgroup label="Київська область">
+                    <option value="Бровари">м. Бровари</option>
+                    <option value="Бориспіль">м. Бориспіль</option>
+                    <option value="Ірпінь / Буча">м. Ірпінь / Буча</option>
+                    <option value="Вишгород">м. Вишгород</option>
+                    <option value="Софіївська Борщагівка">Софіївська Борщагівка / Вишневе</option>
+                    <option value="Обухів">м. Обухів</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 6px;">
+                <span>Викликати спеціаліста</span>
+              </button>
+              <p class="form-help" style="color: var(--text-secondary); text-align: center; margin-top: 8px;">
+                Діагностика проводиться на місці експлуатації
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with signature petrol accent stripe -->
+  <footer class="site-footer">
+    <div class="footer-accent-stripe"></div>
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Info -->
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px; display: inline-flex;">
+            <img src="img/logo.webp" alt="Siemens" class="brand-logo-img" style="height: 24px;">
+          </a>
+          <p style="line-height: 1.6; margin-bottom: 16px;">
+            Незалежний спеціалізований сервісний центр побутової техніки Siemens у місті Києві та Київській області.
+          </p>
+          <div
+            style="font-size: 0.8125rem; color: #94a3b8; line-height: 1.5; padding: 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 0; margin-bottom: 16px;">
+            Ми є незалежною сервісною службою та не є авторизованим сервісним центром Siemens AG.
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <div class="footer-col-title">Послуги ремонту</div>
+          <ul class="footer-links">
+            <li><a href="services.html#washing">Пральні машини</a></li>
+            <li><a href="services.html#dishwashers">Посудомийні машини</a></li>
+            <li><a href="services.html#fridges">Холодильники NoFrost</a></li>
+            <li><a href="services.html#ovens">Духові шафи</a></li>
+            <li><a href="services.html#cooktops">Варильні поверхні</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Navigation -->
+        <div>
+          <div class="footer-col-title">Інформація</div>
+          <ul class="footer-links">
+            <li><a href="prices.html">Прайс-лист на роботи</a></li>
+            <li><a href="prices.html#guarantee">Гарантійний регламент</a></li>
+            <li><a href="about.html">Про майстерню</a></li>
+            <li><a href="about.html#certificates">Комплектуючі OEM</a></li>
+            <li><a href="contacts.html">Зона обслуговування</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contacts & Schedule -->
+        <div>
+          <div class="footer-col-title">Контакти у Києві</div>
+          <div class="footer-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--petrol-vibrant)" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span data-config="address-full">м. Київ та область (Виїзне обслуговування)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--petrol-vibrant)" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <div>
+              <a href="tel:+380000000000" data-config="phone-mobile"
+                style="color: #fff; font-weight: 700; display: block;">+38 (0XX) XXX-XX-XX</a>
+              <span style="font-size: 0.8125rem; color: #94a3b8;">Пн–Нд: 09:00 — 20:00</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--petrol-vibrant)" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span data-config="schedule-work">Пн–Нд: 09:00 — 20:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-disclaimer">
+        <strong>Юридичне повідомлення:</strong> Незалежний спеціалізований сервісний центр. Ми не є авторизованим
+        сервісним центром Siemens AG та не є офіційним представництвом бренду. Назва «Siemens» та відповідні товарні
+        знаки використовуються виключно для інформування споживачів про профіль спеціалізації майстерні з ремонту та
+        сумісність запчастин.
+      </div>
+  </footer>
+
+  <!-- Fast Master Callout Modal Dialog -->
+  <div class="modal-backdrop" id="callModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle" style="font-size: 1.3rem; color: #fff;">Виклик спеціаліста</h3>
+        <p style="font-size: 0.8125rem; color: var(--text-light-muted); margin-top: 4px;">Заповніть форму — зв'яжемося
+          найближчим часом для уточнення деталей</p>
+        <button type="button" class="modal-close-btn" aria-label="Закрити модальне вікно">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form data-ajax-form method="POST" action="send.php">
+          <input type="text" name="website_url" class="form-honeypot" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="form_source" value="Модальне вікно (Швидкий виклик)">
+
+          <div class="form-group">
+            <label class="form-label">Тип техніки Siemens *</label>
+            <select name="appliance" class="form-control" required>
+              <option value="Пральні машини">Пральна машина</option>
+              <option value="Посудомийні машини">Посудомийна машина</option>
+              <option value="Холодильники">Холодильник / Морозильник</option>
+              <option value="Духові шафи">Духова шафа</option>
+              <option value="Варильні поверхні">Варильна поверхня</option>
+              <option value="Витяжки">Витяжка</option>
+              <option value="Інша техніка Siemens">Інший прилад</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Номер телефону для зв'язку *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ваше ім'я</label>
+            <input type="text" name="name" class="form-control" placeholder="Олександр">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Опис несправності (або код помилки)</label>
+            <textarea name="comment" class="form-control" placeholder="Наприклад: помилка E18, не зливає воду..."
+              style="min-height: 80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            <span>Підтвердити виклик</span>
+          </button>
+          <p class="form-help" style="text-align: center;">Гарантуємо конфіденційність персональних даних</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
