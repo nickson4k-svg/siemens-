@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакти сервісного центру Siemens у Києві | Обслуговування по всіх районах</title>
+  <title>Контакти сервісного центру Siemens у Києві | Київ та область</title>
   <meta name="description"
-    content="Контакти незалежного спеціалізованого сервісу Siemens у Києві. Виїзд майстрів по всіх районах міста та передмістю. Графік роботи: Пн–Нд 09:00 — 20:00.">
+    content="Контакти незалежного спеціалізованого сервісу Siemens у Києві. Виїзд майстра: Київ та Київська область за погодженням. Графік роботи: Пн–Нд 09:00 — 20:00.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -88,8 +88,7 @@
             Контакти та зона обслуговування Siemens
           </h1>
           <p class="hero-subtitle" style="margin-bottom: 0;">
-            Обслуговування побутової техніки Siemens у всіх районах Києва та прилеглих населених пунктах Київської
-            області з оперативним виїздом майстра.
+            Обслуговування побутової техніки Siemens: Київ та Київська область за погодженням.
           </p>
         </div>
       </div>
@@ -112,7 +111,7 @@
             <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 8px;">Зона обслуговування</h3>
             <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 10px;"
               data-config="address-full">
-              м. Київ та Київська область (Виїзд майстрів по всіх районах міста та передмістю)
+              Київ та Київська область за погодженням
             </p>
             <p style="font-size: 0.8125rem; color: var(--petrol-deep); font-weight: 600;" data-config="address-metro">
               Оперативний виїзд за адресою клієнта
@@ -186,8 +185,22 @@
               <input type="hidden" name="form_source" value="Сторінка контактів (contacts.html)">
 
               <div class="form-group">
-                <label class="form-label">Ваше ім'я</label>
-                <input type="text" name="name" class="form-control" placeholder="Іван">
+                <label class="form-label">Тип техніки Siemens</label>
+                <select name="appliance" class="form-control">
+                  <option value="Пральні машини">Пральна машина</option>
+                  <option value="Сушильні машини">Сушильна машина</option>
+                  <option value="Посудомийні машини">Посудомийна машина</option>
+                  <option value="Холодильники">Холодильник / Морозильна камера</option>
+                  <option value="Духові шафи">Духова шафа</option>
+                  <option value="Варильні поверхні">Варильна поверхня</option>
+                  <option value="Витяжки">Витяжка</option>
+                  <option value="Інша техніка">Інша техніка</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Ваше ім'я *</label>
+                <input type="text" name="name" class="form-control" placeholder="Олександр" required>
               </div>
 
               <div class="form-group">
@@ -195,26 +208,8 @@
                 <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
               </div>
 
-              <div class="form-group">
-                <label class="form-label">Тип техніки Siemens</label>
-                <select name="appliance" class="form-control">
-                  <option value="Пральна машина">Пральна машина</option>
-                  <option value="Посудомийна машина">Посудомийна машина</option>
-                  <option value="Холодильник">Холодильник NoFrost</option>
-                  <option value="Духова шафа">Духова шафа</option>
-                  <option value="Варильна поверхня">Варильна поверхня</option>
-                  <option value="Витяжка">Витяжка</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Повідомлення чи район міста</label>
-                <textarea name="comment" class="form-control" placeholder="Вкажіть район або симптоми несправності..."
-                  style="min-height: 90px;"></textarea>
-              </div>
-
               <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
-                <span>Надіслати заявку</span>
+                <span>Викликати спеціаліста</span>
               </button>
               <p class="form-help" style="text-align: center; margin-top: 8px;">Зв'яжемося найближчим часом для
                 уточнення деталей</p>
@@ -226,12 +221,11 @@
         <div
           style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-light); padding: 36px;">
           <h3 style="font-size: 1.45rem; color: var(--text-main); margin-bottom: 14px;">
-            Райони Києва та міста області, які ми обслуговуємо
+            Зона обслуговування: Київ та область
           </h3>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
             <div>
-              <h4 style="font-size: 1rem; color: var(--petrol-deep); margin-bottom: 10px;">Райони Києва (оперативний
-                виїзд):</h4>
+              <h4 style="font-size: 1rem; color: var(--petrol-deep); margin-bottom: 10px;">Райони Києва:</h4>
               <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.7;">
                 Печерський, Шевченківський, Голосіївський, Оболонський, Подільський, Солом'янський, Святошинський,
                 Дарницький, Дніпровський, Деснянський (включаючи Позняки, Осокорки, Троєщину, Виноградар, КПІ,
@@ -239,11 +233,10 @@
               </p>
             </div>
             <div>
-              <h4 style="font-size: 1rem; color: var(--petrol-deep); margin-bottom: 10px;">Передмістя та область (до 60
-                км):</h4>
+              <h4 style="font-size: 1rem; color: var(--petrol-deep); margin-bottom: 10px;">Київська область:</h4>
               <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.7;">
                 м. Бровари, м. Бориспіль, м. Ірпінь, м. Буча, м. Вишгород, м. Вишневе, Крюківщина, Софіївська та
-                Петропавлівська Борщагівка, смт Коцюбинське, м. Обухів, м. Васильків.
+                Петропавлівська Борщагівка, смт Коцюбинське, м. Обухів, м. Васильків та інші населені пункти області за погодженням.
               </p>
             </div>
           </div>
@@ -271,7 +264,7 @@
           <ul class="footer-links">
             <li><a href="services.html#washing">Пральні машини</a></li>
             <li><a href="services.html#dishwashers">Посудомийні машини</a></li>
-            <li><a href="services.html#fridges">Холодильники NoFrost</a></li>
+            <li><a href="services.html#fridges">Холодильники та морозильники</a></li>
             <li><a href="services.html#ovens">Духові шафи</a></li>
           </ul>
         </div>
@@ -329,30 +322,27 @@
           <input type="hidden" name="form_source" value="Модальне вікно (Контакти)">
 
           <div class="form-group">
-            <label class="form-label">Тип техніки Siemens *</label>
-            <select name="appliance" class="form-control" required>
+            <label class="form-label">Тип техніки Siemens</label>
+            <select name="appliance" class="form-control">
               <option value="Пральні машини">Пральна машина</option>
+              <option value="Сушильні машини">Сушильна машина</option>
               <option value="Посудомийні машини">Посудомийна машина</option>
-              <option value="Холодильники">Холодильник / Морозильник</option>
+              <option value="Холодильники">Холодильник / Морозильна камера</option>
               <option value="Духові шафи">Духова шафа</option>
               <option value="Варильні поверхні">Варильна поверхня</option>
               <option value="Витяжки">Витяжка</option>
+              <option value="Інша техніка">Інша техніка</option>
             </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ваше ім'я *</label>
+            <input type="text" name="name" class="form-control" placeholder="Олександр" required>
           </div>
 
           <div class="form-group">
             <label class="form-label">Номер телефону *</label>
             <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">Ваше ім'я</label>
-            <input type="text" name="name" class="form-control" placeholder="Ім'я">
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">Коментар</label>
-            <textarea name="comment" class="form-control" placeholder="Опишіть ситуацію..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">

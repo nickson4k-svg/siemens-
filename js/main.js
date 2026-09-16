@@ -181,15 +181,28 @@
 
     function openModal(appliancePreset) {
       if (appliancePreset && applianceSelect) {
-        applianceSelect.value = appliancePreset;
+        let matched = false;
+        for (let opt of applianceSelect.options) {
+          if (opt.value === appliancePreset || opt.textContent.trim() === appliancePreset || opt.textContent.includes(appliancePreset) || appliancePreset.includes(opt.value)) {
+            applianceSelect.value = opt.value;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) applianceSelect.value = appliancePreset;
       }
       modalBackdrop.classList.add('is-open');
       document.body.style.overflow = 'hidden';
 
-      // Автофокус на полі телефону
+      // Автофокус на полі імені або телефону
       setTimeout(() => {
+        const nameInput = modalBackdrop.querySelector('input[name="name"]');
         const phoneInput = modalBackdrop.querySelector('input[type="tel"]');
-        if (phoneInput) phoneInput.focus();
+        if (nameInput) {
+          nameInput.focus();
+        } else if (phoneInput) {
+          phoneInput.focus();
+        }
       }, 100);
     }
 
@@ -343,11 +356,12 @@
     const resultDisplay = document.getElementById('calcResultPrice');
 
     const pricingData = {
-      washing: { base: 450, issues: { no_drain: 380, no_spin: 420, noise: 750, leak: 400, electronics: 850 } },
-      dishwasher: { base: 450, issues: { e15_leak: 480, no_heat: 620, e24_drain: 410, tablet: 350 } },
-      fridge: { base: 550, issues: { no_cold: 950, freezing: 650, noise: 500, fan: 700 } },
-      oven: { base: 450, issues: { no_heat: 580, fan: 490, display: 650, glass: 400 } },
-      cooktop: { base: 450, issues: { no_power: 700, sensor: 620, relay: 550 } }
+      washing: { base: 900, issues: { no_drain: 1200, no_spin: 1600, noise: 1600, leak: 1400, electronics: 1800 } },
+      dryer: { base: 900, issues: { no_heat: 1400, noise: 1600, electronics: 1800 } },
+      dishwasher: { base: 900, issues: { e15_leak: 1400, no_heat: 1400, e24_drain: 1200, tablet: 1700 } },
+      fridge: { base: 900, issues: { no_cold: 2900, freezing: 2400, noise: 1600, fan: 2400 } },
+      oven: { base: 900, issues: { no_heat: 1400, fan: 1200, display: 2500, glass: 1400 } },
+      cooktop: { base: 900, issues: { no_power: 1800, sensor: 2500, relay: 1550 } }
     };
 
     function calculate() {
@@ -355,7 +369,7 @@
       const issue = issueSelect.value;
       const isUrgent = urgencyCheckbox ? urgencyCheckbox.checked : false;
 
-      let total = 450; // Базова діагностика
+      let total = 900; // Базова діагностика
 
       if (pricingData[app]) {
         total = pricingData[app].base;

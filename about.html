@@ -213,7 +213,7 @@
           <ul class="footer-links">
             <li><a href="services.html#washing">Пральні машини</a></li>
             <li><a href="services.html#dishwashers">Посудомийні машини</a></li>
-            <li><a href="services.html#fridges">Холодильники NoFrost</a></li>
+            <li><a href="services.html#fridges">Холодильники та морозильники</a></li>
             <li><a href="services.html#ovens">Духові шафи</a></li>
           </ul>
         </div>
@@ -270,15 +270,22 @@
           <input type="hidden" name="form_source" value="Сторінка про майстерню (about.html)">
 
           <div class="form-group">
-            <label class="form-label">Тип техніки Siemens *</label>
-            <select name="appliance" class="form-control" required>
+            <label class="form-label">Тип техніки Siemens</label>
+            <select name="appliance" class="form-control">
               <option value="Пральні машини">Пральна машина</option>
+              <option value="Сушильні машини">Сушильна машина</option>
               <option value="Посудомийні машини">Посудомийна машина</option>
-              <option value="Холодильники">Холодильник / Морозильник</option>
+              <option value="Холодильники">Холодильник / Морозильна камера</option>
               <option value="Духові шафи">Духова шафа</option>
               <option value="Варильні поверхні">Варильна поверхня</option>
               <option value="Витяжки">Витяжка</option>
+              <option value="Інша техніка">Інша техніка</option>
             </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ваше ім'я *</label>
+            <input type="text" name="name" class="form-control" placeholder="Олександр" required>
           </div>
 
           <div class="form-group">
@@ -286,13 +293,8 @@
             <input type="tel" name="phone" class="form-control" placeholder="+38 (0XX) XXX-XX-XX" required>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Коментар</label>
-            <textarea name="comment" class="form-control" placeholder="Опишіть симптоми поломки..."></textarea>
-          </div>
-
           <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
-            <span>Замовити візит майстра</span>
+            <span>Викликати спеціаліста</span>
           </button>
         </form>
       </div>
